@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:CadastroMvvm"
              x:Class="CadastroMvvm.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Margin="5" Padding="5">
+        <Button x:Name="btnCadastro" Text="Cadastrar Horário" Command="{Binding CadastroHorarioCommpand}"></Button>
+    </StackLayout>
 
 </ContentPage>

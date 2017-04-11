@@ -13,7 +13,8 @@ namespace CadastroMvvm
         {
             InitializeComponent();
 
-            MainPage = new CadastroMvvm.MainPage();
+            //MainPage = new CadastroMvvm.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

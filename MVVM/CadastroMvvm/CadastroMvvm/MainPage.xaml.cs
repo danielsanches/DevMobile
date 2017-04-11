@@ -1,17 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CadastroMvvm.Interfaces;
+using CadastroMvvm.ViewModel;
 using Xamarin.Forms;
 
 namespace CadastroMvvm
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage, IMessage
     {
         public MainPage()
         {
             InitializeComponent();
+            var viewModel = new MainViewModel()
+            {
+                Message = this,
+                Navigation = Navigation
+            };
+
+            BindingContext = viewModel;
         }
     }
 }
