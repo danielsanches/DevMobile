@@ -2,6 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CadastroMvvm.Pages.CadastroHorarioPage">
-
-    <Label Text="Cadastro"></Label>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Command="{Binding SalvarCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+                <Label Text="Remédio" FontSize="Medium" />
+                <Entry x:Name="NomeRemedio" Keyboard="Text" />
+                
+                <Label Text="Horário" FontSize="Medium"/>
+                <DatePicker x:Name="HorarioRemedio" />
+                
+                <Label Text="Repetir(dias)" FontSize="Medium" />
+                <Entry x:Name="DiasRecorrentes" Keyboard="Numeric" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

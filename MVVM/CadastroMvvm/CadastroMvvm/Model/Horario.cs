@@ -3,14 +3,16 @@ using CadastroMvvm.Exceptions;
 using CadastroMvvm.Model.Base;
 using SQLite;
 using System;
+using System.Collections.Generic;
 
 namespace CadastroMvvm.Model
 {
     public class Horario : BaseModel, IKeyObject
     {
         private string _remdeio;
-        private DateTime _horarioRemedio;
+        private double _horarioRemedio;
         private int _diasRecorrentes;
+        private DateTime _horarioInicio;
 
         [PrimaryKey]
         [AutoIncrement]
@@ -29,7 +31,7 @@ namespace CadastroMvvm.Model
         }
 
         [NotNull]
-        public DateTime HorarioRemedio
+        public double HorarioRemedio
         {
             get { return _horarioRemedio; }
             set
@@ -49,14 +51,27 @@ namespace CadastroMvvm.Model
                 VerifyPropertyChanged(() => DiasRecorrentes);
             }
         }
+        
+        [NotNull]
+        public DateTime HorarioInicio
+        {
+            get { return _horarioInicio; }
+            set
+            {
+                _horarioInicio = value;
+                VerifyPropertyChanged(() => HorarioInicio);
+            }
+        }
+
+        public virtual List<Repeticoes> ListaRepeticoes { get; set; } = new List<Repeticoes>();
 
         public override void Validate()
         {
             if (DiasRecorrentes <= 0)
                 throw new RequiredException("Favor informar os dias recorrentes.");
 
-            if (HorarioRemedio < DateTime.Now)
-                throw new RequiredException("Favor informar um horário valido.");
+            if (HorarioRemedio <= 0)
+                throw new RequiredException("Favor informar um horário.");
 
             if (string.IsNullOrEmpty(Remedio))
                 throw new RequiredException("Favor informar o nome do remédio");

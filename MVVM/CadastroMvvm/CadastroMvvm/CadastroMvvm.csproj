@@ -48,10 +48,12 @@
     </Compile>
     <Compile Include="Model\Base\BaseModel.cs" />
     <Compile Include="Model\Horario.cs" />
+    <Compile Include="Model\Repeticoes.cs" />
     <Compile Include="Pages\CadastroHorarioPage.xaml.cs">
       <DependentUpon>CadastroHorarioPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\HorariosService.cs" />
     <Compile Include="ViewModel\HorariosViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewBase\BaseViewModel.cs" />

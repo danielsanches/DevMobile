@@ -16,18 +16,16 @@ namespace CadastroMvvm.Data
             database.CreateTable<Horario>();
         }
 
-        public void Save(T value)
+        public void Update(T value)
         {
-            database.Insert(value);
-        }
-
-        public void Alter(T value)
-        {
-            var all = (from entry in database.Table<T>().AsEnumerable<T>()
+            var response = (from entry in database.Table<T>().AsEnumerable<T>()
                        where entry.Id == value.Id
                        select entry).ToList();
 
-            database.Update(value);
+            if (response.Any())
+                database.Update(value);
+            else
+                database.Insert(value);
         }
 
         public List<T> GetAll()
