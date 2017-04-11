@@ -1,0 +1,2 @@
+c:\users\daniel\documents\visual studio 2017\Projects\MVVM\CadastroMvvm\CadastroMvvm.UWP\CadastroMvvm.UWP.csproj;x86
+c:\users\daniel\documents\visual studio 2017\Projects\MVVM\CadastroMvvm\CadastroMvvm\CadastroMvvm.csproj;neutral
