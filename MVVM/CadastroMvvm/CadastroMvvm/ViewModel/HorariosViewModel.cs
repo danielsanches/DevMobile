@@ -37,7 +37,7 @@ namespace CadastroMvvm.ViewModel
                 Entidade.Validate();
                 _horarioService.Cadastrar(Entidade);
                 Message.DisplayAlert("Alerta", "Lembrete cadastrado com sucesso.", "Ok");
-                Navigation.PushAsync(new MainPage());
+                Navigation.PopAsync();
             }
             catch (RequiredException ex)
             {

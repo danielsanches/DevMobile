@@ -15,26 +15,3 @@ c:\users\daniel\documents\visual studio 2017\Projects\MVVM\CadastroMvvm\Cadastro
 c:\users\daniel\documents\visual studio 2017\Projects\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.pdb
 c:\users\daniel\documents\visual studio 2017\Projects\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.dll.mdb
 c:\users\daniel\documents\visual studio 2017\Projects\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\CadastroMvvm.dll.mdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\CadastroMvvm.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\CadastroMvvm.pdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.csprojResolveAssemblyReference.cache
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.MainPage.xaml.g.cs
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.App.xaml.g.cs
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.pdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\SQLite-net.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\SQLitePCLRaw.batteries_green.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\SQLitePCLRaw.batteries_v2.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\SQLitePCLRaw.core.dll
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\SQLite-net.xml
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.Pages.CadastroHorarioPage.xaml.g.cs
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\obj\Debug\CadastroMvvm.dll.mdb
-C:\Users\Daniel\Documents\GitHub\DevMobile\MVVM\CadastroMvvm\CadastroMvvm\bin\Debug\CadastroMvvm.dll.mdb
