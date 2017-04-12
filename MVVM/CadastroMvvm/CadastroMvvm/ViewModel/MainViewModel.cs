@@ -1,18 +1,23 @@
-﻿using CadastroMvvm.Pages;
+﻿using CadastroMvvm.Model;
+using CadastroMvvm.Pages;
+using CadastroMvvm.Services;
 using CadastroMvvm.ViewModel.ViewBase;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace CadastroMvvm.ViewModel
 {
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel : BaseViewModel<Repeticoes>
     {
         private ICommand _cadastroHorarioCommpand;
+
+        private HorariosService _horarioService;
+
+        public MainViewModel()
+        {
+            _horarioService = new HorariosService();
+            PreencherLista();
+        }
 
         public ICommand CadastroHorarioCommpand
         {
@@ -23,6 +28,11 @@ namespace CadastroMvvm.ViewModel
                     Navigation.PushAsync(new CadastroHorarioPage());
                 }));
             }
+        }
+
+        private void PreencherLista()
+        {
+            Lista = _horarioService.ObterLista();
         }
     }
 }

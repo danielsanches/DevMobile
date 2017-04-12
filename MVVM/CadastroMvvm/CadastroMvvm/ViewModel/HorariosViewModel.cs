@@ -16,6 +16,7 @@ namespace CadastroMvvm.ViewModel
         public HorariosViewModel()
         {
             _horarioService = new HorariosService();
+
         }
 
         public ICommand SalvarCommand
@@ -33,9 +34,10 @@ namespace CadastroMvvm.ViewModel
         {
             try
             {
-                Endidade.Validate();
-                _horarioService.Cadastrar(Endidade);
+                Entidade.Validate();
+                _horarioService.Cadastrar(Entidade);
                 Message.DisplayAlert("Alerta", "Lembrete cadastrado com sucesso.", "Ok");
+                Navigation.PushAsync(new MainPage());
             }
             catch (RequiredException ex)
             {

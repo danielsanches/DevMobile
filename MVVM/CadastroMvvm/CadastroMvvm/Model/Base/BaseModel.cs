@@ -14,15 +14,6 @@ namespace CadastroMvvm.Model.Base
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        protected void VerifyPropertyChanged(Expression<Func<object>> expression)
-        {
-            MemberExpression member = expression.Body as MemberExpression;
-
-            if (member.Member is PropertyInfo propertInfo)
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertInfo.Name));
-
-        }
-
         public abstract void Validate();
     }
 }

@@ -22,7 +22,7 @@ namespace CadastroMvvm.Model
             set
             {
                 _horarioAlerta = value;
-                VerifyPropertyChanged(() => HorarioAlerta);
+                VerifyPropertyChanged("HorarioAlerta");
             }
         }
 

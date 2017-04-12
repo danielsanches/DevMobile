@@ -3,7 +3,6 @@ using CadastroMvvm.Exceptions;
 using CadastroMvvm.Model.Base;
 using SQLite;
 using System;
-using System.Collections.Generic;
 
 namespace CadastroMvvm.Model
 {
@@ -12,7 +11,7 @@ namespace CadastroMvvm.Model
         private string _remdeio;
         private double _horarioRemedio;
         private int _diasRecorrentes;
-        private DateTime _horarioInicio;
+        private TimeSpan _horarioInicio = new TimeSpan(8,30,0);
 
         [PrimaryKey]
         [AutoIncrement]
@@ -26,7 +25,7 @@ namespace CadastroMvvm.Model
             set
             {
                 _remdeio = value;
-                VerifyPropertyChanged(() => Remedio);
+                VerifyPropertyChanged("Remedio");
             }
         }
 
@@ -37,7 +36,7 @@ namespace CadastroMvvm.Model
             set
             {
                 _horarioRemedio = value;
-                VerifyPropertyChanged(() => HorarioRemedio);
+                VerifyPropertyChanged("HorarioRemedio");
             }
         }
 
@@ -48,33 +47,32 @@ namespace CadastroMvvm.Model
             set
             {
                 _diasRecorrentes = value;
-                VerifyPropertyChanged(() => DiasRecorrentes);
+                VerifyPropertyChanged("DiasRecorrentes");
             }
         }
-        
+
         [NotNull]
-        public DateTime HorarioInicio
+        public TimeSpan HorarioInicio
         {
             get { return _horarioInicio; }
             set
             {
                 _horarioInicio = value;
-                VerifyPropertyChanged(() => HorarioInicio);
+                VerifyPropertyChanged("HorarioInicio");
             }
         }
 
-        public virtual List<Repeticoes> ListaRepeticoes { get; set; } = new List<Repeticoes>();
-
         public override void Validate()
         {
-            if (DiasRecorrentes <= 0)
-                throw new RequiredException("Favor informar os dias recorrentes.");
+            if (string.IsNullOrEmpty(Remedio))
+                throw new RequiredException("Favor informar o nome do remédio");
 
             if (HorarioRemedio <= 0)
                 throw new RequiredException("Favor informar um horário.");
 
-            if (string.IsNullOrEmpty(Remedio))
-                throw new RequiredException("Favor informar o nome do remédio");
+            if (DiasRecorrentes <= 0)
+                throw new RequiredException("Favor informar os dias recorrentes.");
+
         }
     }
 }

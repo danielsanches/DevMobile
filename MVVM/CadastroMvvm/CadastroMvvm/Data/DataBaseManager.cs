@@ -14,6 +14,7 @@ namespace CadastroMvvm.Data
         {
             database = DependencyService.Get<ISQLite>().GetConnection();
             database.CreateTable<Horario>();
+            database.CreateTable<Repeticoes>();
         }
 
         public void Update(T value)
